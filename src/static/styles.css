@@ -98,7 +98,9 @@ section h3 {
 }
 
 .participant {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   background: #e3f2fd;
   color: #0b5394;
   border: 1px solid #bbdefb;
@@ -106,6 +108,22 @@ section h3 {
   border-radius: 999px;
   font-size: 13px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1;
+  color: #c62828;
+}
+
+.remove-btn:focus {
+  outline: 2px solid rgba(198,40,40,0.2);
+  border-radius: 4px;
 }
 
 /* Fallback when no participants */
